@@ -36,7 +36,7 @@ ZIP_URL_TEMPLATE = (
     "https://nsearchives.nseindia.com/archives/nsccl/mwpl/combineoi_{date_str}.zip"
 )
 
-RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
+RAW_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "raw")
 
 HEADERS = {
     "User-Agent": (
