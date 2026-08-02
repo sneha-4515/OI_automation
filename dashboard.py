@@ -13,7 +13,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 HISTORY_PATH = os.path.join(BASE_DIR, "data", "processed", "mwpl_history.csv")
 INTRADAY_OI_PATH = os.path.join(BASE_DIR, "data", "processed", "intraday_oi.csv")
 
