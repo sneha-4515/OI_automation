@@ -13,7 +13,7 @@ history are not duplicated.
 import os
 import pandas as pd
 
-BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
 HISTORY_PATH = os.path.join(PROCESSED_DIR, "mwpl_history.csv")
 
